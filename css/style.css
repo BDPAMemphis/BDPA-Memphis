@@ -14,10 +14,21 @@ body {
   color: ##01B3E7;
   font-family: "Open Sans", sans-serif;
 }
-
 a {
   color: #01B3E7;
   transition: 0.5s;
+}
+.button {
+  background-color: #01B3E7;
+  border: none;
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
 }
 
 a:hover,
