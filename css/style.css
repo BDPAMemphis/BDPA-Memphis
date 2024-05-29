@@ -1152,3 +1152,34 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-top: 20px;
   }
 }
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  gap: 20px; /* Gap between items */
+}
+
+.image-item {
+  flex: 1 1 calc(50% - 20px); /* 2 items per row with 20px gap */
+  box-sizing: border-box;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .image-item {
+      flex: 1 1 100%; /* Stack images vertically */
+  }
+
+  .remove {
+    display: none;
+  }
+}
