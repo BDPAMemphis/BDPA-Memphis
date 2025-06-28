@@ -32,6 +32,16 @@ a {
   cursor: pointer;
 }
 
+.donatebtn{
+  background-color: #1a3964;
+  padding-left: 30%;
+  padding-right: 30%;
+  color: white;
+  border: 2px solid #01B3E7;
+  border-radius: 30px;
+  top: 0;
+}
+
 a:hover,
 a:active,
 a:focus {
@@ -289,7 +299,7 @@ h6 {
 .nav-menu,
 .nav-menu * {
   margin: 0;
-  padding: 0;
+  
   list-style: none;
 }
 
@@ -353,7 +363,7 @@ h6 {
 /* Nav Meu Styling */
 
 .nav-menu a {
-  padding: 10px 8px;
+  padding: 0 20px 20px 0;
   text-decoration: none;
   display: inline-block;
   color: #01B3E7;
