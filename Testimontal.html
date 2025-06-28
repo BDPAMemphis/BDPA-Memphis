@@ -1,131 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="testmontals.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="testmontals.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <title>Responsive Testimonial Slider</title>
 
-    <title>Responsive Testimonial Slider</title>
+  
 </head>
-<body class=".section">
-    <div id="page" class="site">
-        <div class="container">
-            <div class="testi">
-                <div class="head">
-                    <h3 class="underline">Testimonials</h3>
-                   
-                </div>
-                <div class="body swiper">
-                    <ul class=" swiper-wrapper">
-                        <li class="swiper-slide  slide-1">
-                            <div class="wrapper">
-                                <div class="thumbnail cool" >
-                                    <img src="assets/image-1.jpg" alt="">
-                                </div>
-                                <div class="aside">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur facilis, quis veritatis modi asperiores voluptatem ex! Laudantium, minus quaerat.</p>
-                                    <div class="name">
-                                        <h4>Sarah Malik</h4>
-                                        <p>Grapic Designer</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                          <li class="swiper-slide slide-2">
-                            <div class="wrapper">
-                                <div class="thumbnail">
-                                    <img src="assets/image-2.jpg" alt="">
-                                </div>
-                                <div class="aside">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur facilis, quis veritatis modi asperiores voluptatem ex! Laudantium, minus quaerat.</p>
-                                    <div class="name">
-                                        <h4>Sarah Malik</h4>
-                                        <p>Grapic Designer</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="swiper-slide slide-3">
-                            <div class="wrapper" >
-                                <div class="thumbnail">
-                                    <img src="assets/image-3.webp" alt="">
-                                </div>
-                                <div class="aside">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur facilis, quis veritatis modi asperiores voluptatem ex! Laudantium, minus quaerat.</p>
-                                    <div class="name">
-                                        <h4>Sarah Malik</h4>
-                                        <p>Grapic Designer</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="swiper-slide slide-4">
-                            <div class="wrapper">
-                                <div class="thumbnail">
-                                    <img src="assets/image-4.jpg" alt="">
-                                </div>
-                                <div class="aside">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur facilis, quis veritatis modi asperiores voluptatem ex! Laudantium, minus quaerat.</p>
-                                    <div class="name">
-                                        <h4>Sarah Malik</h4>
-                                        <p>Grapic Designer</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="swiper-slide slide-5">
-                            <div class="wrapper">
-                                <div class="thumbnail">
-                                    <img src="assets/image-5.jpg" alt="">
-                                </div>
-                                <div class="aside">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur facilis, quis veritatis modi asperiores voluptatem ex! Laudantium, minus quaerat.</p>
-                                    <div class="name">
-                                        <h4>Sarah Malik</h4>
-                                        <p>Grapic Designer</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <br>
-                    
-                     <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
-<!-- 
-   If we need navigation buttons 
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-                -->
 
-
-</div>
-
-            </div>
+<body>
+  <div id="page" class="site">
+    <div class="container">
+      <div class="testi">
+        <div class="head">
+          <h3 class="underline">Testimonials</h3>
         </div>
+        <div class="body swiper">
+       <!-- HTML stays simple -->
+<ul class="swiper-wrapper" id="slides-list"></ul>
+<br>
+<div class="swiper-pagination"></div>
+
+          <!-- Navigation buttons (optional) -->
+          <!--
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          -->
+        </div>
+      </div>
     </div>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>    
-const swiper = new Swiper('.swiper', {
-  loop: true,
-  autoHeight: true,
-  autoplay: {
-    delay: 6000,  // 7 seconds per slide
-    disableOnInteraction: false,
-  },
-  speed: 2000,    // 2-second transition (adjust to your comfort)
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+  </div>
 
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="slider.js"></script>
 
-
-</script>
+  
 </body>
 </html>
